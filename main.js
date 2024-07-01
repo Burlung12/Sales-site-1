@@ -50540,3 +50540,19 @@ gsap.to(".reveal-text>h2>span",{scrollTrigger:{
 stagger:.2,
 color:"#000",
 })
+
+
+let cont = document.querySelector(".img-carousel");
+gsap.to("img", {
+  ease: "none",
+  x: () => -(cont.scrollWidth - window.innerWidth),
+  scrollTrigger: {
+	trigger: cont,
+	pin: cont,
+	start: "center center",
+    end: () => "+=" + (cont.scrollWidth - window.innerWidth),
+	scrub: true,
+	invalidateOnRefresh: true,
+    markers: true,
+  }
+});

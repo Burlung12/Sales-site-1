@@ -50553,6 +50553,6 @@ gsap.to("img", {
     end: () => "+=" + (cont.scrollWidth - window.innerWidth),
 	scrub: true,
 	invalidateOnRefresh: true,
-    markers: true,
+    // markers: true,
   }
 });

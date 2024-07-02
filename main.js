@@ -50535,24 +50535,147 @@ gsap.to(".reveal-text>h2>span",{scrollTrigger:{
     start:`top bottom`,
     end:`bottom top`,
     scrub:.5,
-    sroller: ".main",
+    sroller: ".home-intro",
 },
 stagger:.2,
 color:"#000",
+},"aw")
+gsap.to(".left-container",{scrollTrigger:{
+    trigger:`.left-container`,
+    start:`top bottom`,
+    end:`bottom top`,
+    scrub:.5,
+    sroller: ".home-intro",
+},
+stagger:.2,
+x:-50,
+y:-100,
+},"aw")
+
+
+var tmtl = gsap.timeline({scrollTrigger:{
+    trigger:".main-why-FindLaw",
+    // markers:true,
+    start:"38% 50%",
+    end:"100% 50%",
+    scrub:2,
+    pin:true
+}});
+tmtl
+.to(".text",{
+    top: "-20%",
+},'a')
+.to("#card-one",{
+    top: "30%",
+},'a')
+.to("#card-two",{
+    top: "130%"
+},'a')
+
+.to("#card-two",{
+    top: "35%"
+},'b')
+.to("#card-one",{
+    width: "50%",
+    height: "35vh"
+},'b')
+.to("#card-three",{
+    top: "130%"
+}, 'b')
+
+.to("#card-three",{
+    top: "40%"
+}, 'c')
+.to("#card-two",{
+    width: "60%",
+    height: "45vh"
+},'c')
+.to("#card-four",{
+	top: "130%"
+},'c')
+
+.to("#card-four",{
+    top: "42%"
+}, 'd')
+.to("#card-three",{
+    width: "70%",
+    height: "55vh"
+},'d')
+.to("#card-five",{
+	top: "130%"
+},'d')
+
+.to("#card-five",{
+    top: "45%"
+}, 'e')
+.to("#card-four",{
+    width: "75%",
+    height: "50vh"
+},'e')
+
+var tml = gsap.timeline({scrollTrigger:{
+    trigger:"#main",
+    // markers:true,
+    start:"50% 50%",
+    end:"100% 50%",
+    scrub:2,
+    pin:true
+}});
+tml
+.to("#center",{
+   height: "100%",
+},'aa')
+.to("#top",{
+    top: "-50%",
+ },'aa')
+ .to("#bottom",{
+    bottom: "-50%",
+ },'aa')
+.to("#top-h1",{
+    top: "60%"
+ },'aa')
+ .to("#bottom-h1",{
+    bottom: "-30%"
+ },'aa')
+.to("#center-h1",{
+   top: "-30%"
+},'aa')
+.to(".content",{
+   delay: -0.2,
+   marginTop: "0%"
 })
+// let cont = document.querySelector(".img-carousel");
+// gsap.to(".img-carousel > img", {
+//   ease: "none",
+//   x: () => -(cont.scrollWidth - window.innerWidth),
+//   scrollTrigger: {
+// 	trigger: cont,
+// 	pin: cont,
+// 	start: "center center",
+//     end: () => "+=" + (cont.scrollWidth - window.innerWidth),
+// 	scrub: true,
+// 	invalidateOnRefresh: true,
+//     // markers: true,
+//   }
+// });
 
+let contImg = document.querySelector(".images-card");
+let galleryWidth=contImg.offsetWidth;
+let amoutToSrcoll= galleryWidth-window.innerWidth;
 
-let cont = document.querySelector(".img-carousel");
-gsap.to("img", {
-  ease: "none",
-  x: () => -(cont.scrollWidth - window.innerWidth),
+gsap.to(".images-card", {
+  x: -amoutToSrcoll,
   scrollTrigger: {
-	trigger: cont,
-	pin: cont,
-	start: "center center",
-    end: () => "+=" + (cont.scrollWidth - window.innerWidth),
+	trigger: ".home-part",
+	pin: true,
+	start: "top 30px",
+    end:"+=" + amoutToSrcoll,
 	scrub: true,
-	invalidateOnRefresh: true,
+	// invalidateOnRefresh: true,
     // markers: true,
   }
 });
+
+
+
+

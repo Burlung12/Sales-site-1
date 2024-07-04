@@ -4171,7 +4171,7 @@ html.force--consent.show--consent body {
 }
 
 .home-prob__main-item-title {
-	margin-top: 4rem
+	margin-top: 0rem
 }
 
 .home-prob__main-item-txt {
@@ -10475,7 +10475,7 @@ margin: 0 auto;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 150vh;
+    min-height: 80vh;
 	/* position: relative; */
     /* background-color: #202020; */
 }
@@ -10486,7 +10486,7 @@ margin: 0 auto;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 80vh;
+    height: 0vh;
     background-position: center;
     background-size: cover;
 	border-radius: 30px;
@@ -10501,12 +10501,12 @@ margin: 0 auto;
 
 .main-why-FindLaw  #card-two {
     top: 200%;
-	background-color: rgb(224, 64, 184);
+	background-color: rgb(153, 75, 134);
 }
 
 .main-why-FindLaw #card-three {
     top: 250%;
-	background-color: rgb(83, 224, 64);
+	background-color: rgb(129, 221, 117);
 }
 .main-why-FindLaw  #card-four {
     top: 300%;
@@ -10520,7 +10520,7 @@ margin: 0 auto;
 
 
 .main-why-FindLaw .text{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 25%;
     display: flex;
@@ -10543,49 +10543,33 @@ margin: 0 auto;
 .main-why-FindLaw .label{
 	text-align: center;
 	color: #9a9a9a;
-	font-size: 1.2vw;
+	font-size: 25px;
 }
 
-.cards .main-contents{
-    position: absolute;
-    bottom: 20%;
+.tranding-slide .main-contents{
+    /* position: absolute; */
     padding: 0% 5%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
-.cards .main-contents .content-left{
-	width: 80%;
-	padding-right: 30px;
+.tranding-slide .main-contents .content-left{
+	width: 100%;
+	/* padding-right: 30px; */
 }
-.cards .main-contents .content-left h3{
+.tranding-slide .main-contents .content-left h3{
 	text-transform: capitalize;
-    font-size: 40px;
+    font-size: 30px;
 }
-.content-button{
-	width: 20%;
-}
-.content-button p{
-height: 120px;
-    width: 120px;
-    text-align: center;
-    float: right;
-    background: #eaeef0;
-    font-size: 15px;
-    text-transform: uppercase;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main-contents img{
+
+/* .tranding-slide .main-contents img{
 	position: absolute;
 	top: -325%;
 	right: -30%;
 	width: 600px;
 	animation: rotate 5s alternate infinite;
-}
+} */
 
 
 @keyframes rotate {
@@ -10607,4 +10591,233 @@ height: 120px;
 
 .img-carousel{
 	overflow-x: hidden;
+}
+
+.extra{
+	display: flex;
+	align-items: flex-end;
+    width: 80vw;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: space-around;
+}
+.support{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 15px;
+}
+.support img{
+	width: 100px;
+    margin-bottom: 10px;
+}
+.top-content{
+	width: 90%;
+	margin: 20px auto 15px;
+
+}
+.top-content .number{
+	font-size: 40px;
+    color: #021c6c;
+    font-family: math;
+    font-weight: 700;
+}
+.top-content-text{
+	font-size: 18px;
+}
+.top-content-last{
+	display: flex;
+}
+.top-content-last .blog{
+margin-right: 20px;
+}
+
+
+.home-part2{
+	background-color: #eaeef0;
+	height: 10vh;
+}
+.text-center {
+  text-align: center;
+}
+#tranding {
+  padding: 4rem 0;
+  width: 76% !important;
+  margin: 0 auto;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+  border-radius: 20px;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+	border-radius: 20px;
+  }
+}
+
+.tranding-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+  border-radius: 20px;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #000;
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #000;
+}
+
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: #000;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: red;
+}
+
+  .slider1{
+	  background-color: rgb(241, 223, 151);
+  }
+  .slider2{
+	background-color: turquoise;
+}
+.slider3{
+	background-color: rgb(212, 233, 93);
+}
+.slider4{
+	background-color: rgb(98, 236, 139);
+}
+.slider5{
+	background-color: rgb(105, 131, 247);
+}
+.main-text-extra{
+	font-size: 45px;
+	font-weight: 600;
+	padding-bottom: 20px;
+	text-transform: capitalize;
+}
+.home-intro__label{
+	font-size: 25px !important;
 }

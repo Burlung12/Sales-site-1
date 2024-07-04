@@ -50553,65 +50553,80 @@ y:-100,
 },"aw")
 
 
-var tmtl = gsap.timeline({scrollTrigger:{
-    trigger:".main-why-FindLaw",
-    // markers:true,
-    start:"38% 50%",
-    end:"100% 50%",
-    scrub:2,
-    pin:true
-}});
-tmtl
-.to(".text",{
-    top: "-20%",
-},'a')
-.to("#card-one",{
-    top: "30%",
-},'a')
-.to("#card-two",{
-    top: "130%"
-},'a')
+// var tmtl = gsap.timeline({scrollTrigger:{
+//     trigger:".main-why-FindLaw",
+//     markers:true,
+//     start:"38% 50%",
+//     end:"100% 50%",
+//     scrub:2,
+//     pin:true,
+// 	duration:1,
+// }});
+// tmtl
+// .to(".text",{
+//     top: "-20%",
+// 	duration:1,
+// },'a')
+// .to("#card-one",{
+//     top: "30%",
+// 	duration:1,
+// },'a')
+// .to("#card-two",{
+//     top: "130%",
+// 	duration:1,
+// },'a')
 
-.to("#card-two",{
-    top: "35%"
-},'b')
-.to("#card-one",{
-    width: "50%",
-    height: "35vh"
-},'b')
-.to("#card-three",{
-    top: "130%"
-}, 'b')
+// .to("#card-two",{
+//     top: "35%",
+// 	duration:1,
+// },'b')
+// .to("#card-one",{
+//     width: "50%",
+//     height: "35vh",
+// 	duration:1,
+// },'b')
+// .to("#card-three",{
+//     top: "130%",
+// 	duration:1,
+// }, 'b')
 
-.to("#card-three",{
-    top: "40%"
-}, 'c')
-.to("#card-two",{
-    width: "60%",
-    height: "45vh"
-},'c')
-.to("#card-four",{
-	top: "130%"
-},'c')
+// .to("#card-three",{
+//     top: "40%",
+// 	duration:1,
+// }, 'c')
+// .to("#card-two",{
+//     width: "60%",
+//     height: "45vh",
+// 	duration:1,
+// },'c')
+// .to("#card-four",{
+// 	top: "130%",
+// 	duration:1,
+// },'c')
 
-.to("#card-four",{
-    top: "42%"
-}, 'd')
-.to("#card-three",{
-    width: "70%",
-    height: "55vh"
-},'d')
-.to("#card-five",{
-	top: "130%"
-},'d')
+// .to("#card-four",{
+//     top: "42%",
+// 	duration:1,
+// }, 'd')
+// .to("#card-three",{
+//     width: "70%",
+//     height: "55vh",
+// 	duration:1,
+// },'d')
+// .to("#card-five",{
+// 	top: "130%",
+// 	duration:1,
+// },'d')
 
-.to("#card-five",{
-    top: "45%"
-}, 'e')
-.to("#card-four",{
-    width: "75%",
-    height: "50vh"
-},'e')
+// .to("#card-five",{
+//     top: "45%",
+// 	duration:1,
+// }, 'e')
+// .to("#card-four",{
+//     width: "75%",
+//     height: "50vh",
+// 	duration:1,
+// },'e')
 
 var tml = gsap.timeline({scrollTrigger:{
     trigger:"#main",
@@ -50679,3 +50694,50 @@ gsap.to(".images-card", {
 
 
 
+// var TrandingSlider = new Swiper('.tranding-slider', {
+// 	effect: 'coverflow',
+// 	grabCursor: true,
+// 	centeredSlides: true,
+// 	loop: true,
+// 	slidesPerView: 'auto',
+// 	coverflowEffect: {
+// 	  rotate: 0,
+// 	  stretch: 0,
+// 	  depth: 100,
+// 	  modifier: 2.5,
+// 	},
+// 	pagination: {
+// 	  el: '.swiper-pagination',
+// 	  clickable: true,
+// 	},
+// 	navigation: {
+// 	  nextEl: '.swiper-button-next',
+// 	  prevEl: '.swiper-button-prev',
+// 	}
+//   });
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 5000, // Delay in milliseconds (5 seconds here)
+        disableOnInteraction: false, // Autoplay continues even when user interacts with slider
+    }
+});

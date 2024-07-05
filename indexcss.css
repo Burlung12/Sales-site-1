@@ -4799,7 +4799,9 @@ html.force--consent.show--consent body {
 	padding: 6rem 5rem;
 	transition: background-color .4s;
 	display: flex;
-	position: relative
+	position: relative;
+	border-radius: 15px;
+
 }
 
 .home-why__main-item-inner .icon {
@@ -10344,12 +10346,12 @@ margin: 0 auto;
     object-fit: cover;
 }
 .main-sevice-title{
-	position: absolute;
-	left: 50%;
-	top:35%;
-	transform: translate(-50%,-50%);
+	/* position: absolute; */
+	/* left: 50%;
+	top:35%; */
+	/* transform: translate(-50%,-50%); */
 	color: #fff;
-	text-shadow: 0px 9px 12px #ffffffa8;
+	/* text-shadow: 0px 9px 12px #ffffffa8; */
 }
 .overlay{
 	background-color: #000;
@@ -10561,6 +10563,10 @@ margin: 0 auto;
 .tranding-slide .main-contents .content-left h3{
 	text-transform: capitalize;
     font-size: 30px;
+	text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
 }
 
 /* .tranding-slide .main-contents img{
@@ -10620,11 +10626,13 @@ margin: 0 auto;
 
 }
 .top-content .number{
-	font-size: 40px;
-    color: #021c6c;
-    font-family: math;
-    font-weight: 700;
+	font-size: 100px;
+    color: hsla(220, 100%, 99%, 0.6);
+    font-family: 'HelveticaNowDisplay';
+    font-weight: 900;
+	text-shadow: -1px -1px 0 #00000091, 1px -1px 0 #0000007a, -1px 1px 0 #000000ab, 1px 1px 0 #000000ad;
 }
+
 .top-content-text{
 	font-size: 18px;
 }
@@ -10674,6 +10682,7 @@ margin-right: 20px;
   height: 42rem;
   position: relative;
   border-radius: 20px;
+  transition: all 0.6s ease-in-out;
 }
 
 @media (max-width:500px) {
@@ -10812,6 +10821,9 @@ margin-right: 20px;
 .slider5{
 	background-color: rgb(105, 131, 247);
 }
+.tranding-slide:hover{
+	cursor: pointer;	
+}
 .main-text-extra{
 	font-size: 45px;
 	font-weight: 600;
@@ -10822,3 +10834,146 @@ margin-right: 20px;
 .home-intro__label{
 	font-size: 28px !important;
 }
+.why-FindLaw-section{
+	width: 90%;
+	/* height: 100vh; */
+	margin: 0 auto;
+}
+.why-findlaw-cards{
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	align-items: flex-end;
+	margin-top: -250px;
+	}
+.lastcrads,
+.cards-points {
+    width: 25%;
+    margin: 0 10px;
+}
+.lastcrads .cards-points {
+    height: 100%;
+    width: 100%;
+    margin: 0 00px;
+	margin-top: 20px;
+}
+.cards-points{
+	border: 1px solid rgba(53, 53, 53, 0.712);
+    border-radius: 20px;
+	cursor: pointer;
+}
+.cards-points .main-contents{
+	padding: 100px 30px;
+}
+.cards-points .main-contents .content-left h3{
+	text-transform: capitalize;
+    font-size: 35px;
+}
+.cards-points .main-contents .content-left p{
+	font-size: 18px;
+}
+.why-FindLaw-section-label{
+	font-size: 28px;
+	color: #9a9a9a;
+	font-family: "HelveticaNowDisplay";
+}
+/* background-image: url(assets/images/shape/shape-56.png); */
+
+.why-FindLaw-section-text p{
+	font-size: 20px;
+	margin-top:20px ;
+}
+.why-FindLaw-section-text {
+	margin-bottom: 50px;
+}
+.cards-points5,
+.cards-points1{
+	background-image: url("./shape-56.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.cards-points3{
+	background-image: url("./shape-58.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.cards-points4{
+	background-image: url("./shape-57.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.arrow-direction{
+	position: relative;
+    width: 60px;
+    right: -80%;
+    margin-top: 15px;
+	transition: all 0.8s ease-in-out;
+}
+.arrow{
+	transition: all 0.8s ease-in-out;
+}
+.circle{
+	position: absolute;
+	transition: all 0.8s ease-in-out;
+}
+.cards-points:hover .arrow-direction .circle{
+	transform: rotate(180deg);
+
+}
+.cards-points:hover .arrow-direction .arrow{
+	transform: translate(25px, -25px);
+	transition: all 0.8s ease-in-out;
+}
+.cards-points{
+	opacity: 0.6;
+	transform: translateY(30px);
+	transition: all 0.4s ease-in-out;
+}
+.cards-points:hover{
+	transform: translateY(0) scale(1.05);
+	transition: all 0.4s ease-in-out;
+	border: 1px solid rgba(209, 168, 31, 0.712);
+
+}
+.carousel{
+	margin-top: 100vh;
+}
+.etra-card1{
+background-image: url("./shape-12.png");
+background-position: bottom right;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.home-why__main-item:hover .home-why__main-item-inner.etra-card1{
+	border-radius: 15px;
+	background-image: url("./shape-12.png");
+	background-position: bottom right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+	.etra-card2{
+		background-image: url("./shape-13.png");
+		background-position: bottom right;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+		.home-why__main-item:hover .home-why__main-item-inner.etra-card2{
+			border-radius: 15px;
+			background-image: url("./shape-13.png");
+			background-position: bottom right;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.etra-card3{
+			background-image: url("./shape-14.png");
+			background-position: bottom right;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+			.home-why__main-item:hover .home-why__main-item-inner.etra-card3{
+				border-radius: 15px;
+				background-image: url("./shape-14.png");
+				background-position: bottom right;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}

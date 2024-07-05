@@ -50655,10 +50655,14 @@ tml
 .to("#center-h1",{
    top: "-30%"
 },'aa')
-.to(".content",{
+.to(".carousel",{
    delay: -0.2,
    marginTop: "0%"
-})
+},'aa')
+.to(".content",{
+	delay: -0.2,
+	marginTop: "0%"
+ })
 // let cont = document.querySelector(".img-carousel");
 // gsap.to(".img-carousel > img", {
 //   ease: "none",
@@ -50741,3 +50745,37 @@ var TrandingSlider = new Swiper('.tranding-slider', {
         disableOnInteraction: false, // Autoplay continues even when user interacts with slider
     }
 });
+var t2l = gsap.timeline({scrollTrigger:{
+    trigger:".why-FindLaw-section",
+    start:"20% 50%",
+    end:"30% 50%",
+    scrub:2,
+    pin:true,
+	duration:1,
+}});
+t2l
+ .to(".cards-points4",{
+	    opacity:1,
+		translateY:"-10"
+	},'card')
+	.to(".cards-points1",{
+	    opacity:1,
+		delay:0.5,
+		translateY:"-10"
+	},'card')
+	.to(".cards-points2",{
+	    opacity:1,
+		delay:0.6,
+		translateY:"-10"
+	},'card')
+	.to(".cards-points3",{
+	    opacity:1,
+		delay:0.2,
+		translateY:"-10"
+	},'card')
+	.to(".cards-points5",{
+	    opacity:1,
+		delay:0.4,
+		translateY:"-10"
+	},'card')
+

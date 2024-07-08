@@ -443,16 +443,16 @@ function(e, t, i, r, n) {
 												yPercent: 0,
 												autoAlpha: 1,
 												duration: .4,
-												delay: 2,
+												delay: .8,
 												ease: "none"
 											}))
 										},
 										delay: .4
 									}), (0, o.default).stop();
 									let n = {
-											phase_1: 2.2,
-											phase_2: 2.45,
-											phase_3: 1.25
+											phase_1: .6,
+											phase_2: 0.8,
+											phase_3: 0.4
 										},
 										s = {
 											bezier_1: (0, y.default).create("cus1", "M0,0 C0.424,0.343 0.294,0.974 1,1 "),
@@ -475,11 +475,11 @@ function(e, t, i, r, n) {
 									t //0-65 count + count move
 										//0
 										.to(".trans__count-bar-inner", {
-											scaleX: .65,
+											scaleX: .75,
 											duration: n.phase_1,
 											ease: s.bezier_1
 										}).to(h, {
-											val: 65,
+											val: 75,
 											roundProps: "val",
 											duration: n.phase_1,
 											ease: s.bezier_1,
@@ -492,28 +492,28 @@ function(e, t, i, r, n) {
 											ease: s.bezier_1
 										}, "<=0").to(".trans__home .home-hero__title", {
 											y: (0, a.default)(window).height() * e - r,
-											duration: n.phase_1 + .2,
+											duration: n.phase_1 + .1,
 											ease: s.bezier_1
 										}, "<=0") // //65
 										.to(".trans__count-bar-inner", {
 											scaleX: 1,
-											duration: n.phase_2,
-											ease: s.bezier_2
+											duration: n.phase_1,
+											ease: s.bezier_1
 										}).to(h, {
 											val: 100,
 											roundProps: "val",
-											duration: n.phase_2,
-											ease: s.bezier_2,
+											duration: n.phase_1,
+											ease: s.bezier_1,
 											onUpdate: function() {
 												(0, a.default)(".trans__count-value").text(h.val < 10 ? `0${h.val}` : h.val)
 											}
 										}, "<=0").to(".trans__count", {
 											y: `-=${(0,a.default)(window).height()*i-r}`,
-											duration: n.phase_2 + .1,
-											ease: s.bezier_2
+											duration: n.phase_1 + .1,
+											ease: s.bezier_1
 										}, "<=0").to(".trans__home .home-hero__title", {
 											y: 0,
-											duration: n.phase_2 + .4,
+											duration: n.phase_1 + .3,
 											ease: s.bezier_3
 										}, "<=0").to(".trans__count", {
 											autoAlpha: 0,
@@ -609,7 +609,7 @@ function(e, t, i, r, n) {
 							}
 						})).to(".trans__item", {
 							scaleY: 0,
-							duration: 1,
+							duration: 0.6,
 							stagger: {
 								each: ".1"
 							},
@@ -656,7 +656,7 @@ function(e, t, i, r, n) {
 						}, 0).to(".trans__logo", {
 							rotateZ: "0deg",
 							autoAlpha: 1,
-							duration: .6,
+							duration: .0,
 							yPercent: 0
 						}, ">=-.8.5"), t).then(() => {
 							console.log("remove scroll trigger"), (0, m.default).getAll().forEach(e => {
@@ -12473,7 +12473,7 @@ function(e, t, i, r, n) {
 									onComplete: () => {
 										t.revert(), new m.default(".home-hero .home-hero__title", T.lines), i.revert(), new m.default(".home-hero .home-hero__backer-label", T.lines), s.revert(), (0, a.default)(".home-hero__sub-caption-item").addClass("anim")
 									},
-									delay: 1.2
+									delay: 1
 								}).from(t.chars, {
 									yPercent: 60,
 									autoAlpha: 0,
@@ -50541,15 +50541,16 @@ stagger:.2,
 color:"#000",
 },"aw")
 gsap.to(".left-container",{scrollTrigger:{
-    trigger:`.left-container`,
-    start:`top bottom`,
+    trigger:`.home-intro`,
+    start:`50% 50%`,
     end:`bottom top`,
-    scrub:.5,
+    scrub:true,
     sroller: ".home-intro",
 },
 stagger:.2,
-x:-50,
-y:-100,
+delay:-2,
+// x:-50,
+// y:0,
 },"aw")
 
 
@@ -50678,22 +50679,22 @@ tml
 //   }
 // });
 
-let contImg = document.querySelector(".images-card");
-let galleryWidth=contImg.offsetWidth;
-let amoutToSrcoll= galleryWidth-window.innerWidth;
+// let contImg = document.querySelector(".images-card");
+// let galleryWidth=contImg.offsetWidth;
+// let amoutToSrcoll= galleryWidth-window.innerWidth;
 
-gsap.to(".images-card", {
-  x: -amoutToSrcoll,
-  scrollTrigger: {
-	trigger: ".home-part",
-	pin: true,
-	start: "top 30px",
-    end:"+=" + amoutToSrcoll,
-	scrub: true,
-	// invalidateOnRefresh: true,
-    // markers: true,
-  }
-});
+// gsap.to(".images-card", {
+//   x: -amoutToSrcoll,
+//   scrollTrigger: {
+// 	trigger: ".home-part",
+// 	pin: true,
+// 	start: "top 30px",
+//     end:"+=" + amoutToSrcoll,
+// 	scrub: true,
+// 	// invalidateOnRefresh: true,
+//     // markers: true,
+//   }
+// });
 
 
 
@@ -50797,3 +50798,33 @@ t2l
 		  }
 		}
 	  });
+
+
+	  var swiper = new Swiper(".mySwiper", {
+		loop: true,
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+		autoplay: {
+			delay: 5000, // Autoplay delay in milliseconds (5 seconds)
+			disableOnInteraction: false, // Autoplay continues even when user interacts with slider
+		},
+	});
+	
+	var swiper2 = new Swiper(".mySwiper2", {
+		loop: true,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+		autoplay: {
+			delay: 5000, // Autoplay delay in milliseconds (5 seconds)
+			disableOnInteraction: false, // Autoplay continues even when user interacts with slider
+		},
+	});
+	

@@ -10675,8 +10675,8 @@ margin-right: 20px;
 }
 #tranding {
   padding: 4rem 0;
-  max-width: 1360px !important;
-  margin: 0 auto;
+	width: 75%;
+	margin: 0 auto;
 }
 
 @media (max-width:1440px) {
@@ -11089,7 +11089,7 @@ background-repeat: no-repeat;
 
 			.awards-cover{
 				position: relative;
-				margin-top: 70px;
+				margin-top: 25vh;
 			}
 			  .carousle-container{
 				padding: 1vw 0 1vw 0;
@@ -11151,3 +11151,4 @@ background-repeat: no-repeat;
 				background-color: #eaeef0;
 				height: 10vh;
 			}
+

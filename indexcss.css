@@ -10653,7 +10653,7 @@ margin-right: 20px;
 }
 #tranding {
   padding: 4rem 0;
-  width: 76% !important;
+  max-width: 1360px !important;
   margin: 0 auto;
 }
 

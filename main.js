@@ -50175,23 +50175,7 @@ function(e, t, i, r, n) {
 				for ( // walks up the element's ancestors and finds any that had their scale set to 0 via GSAP, and changes them to 0.0001 to ensure that measurements work. Firefox has a bug that causes it to incorrectly report getBoundingClientRect() when scale is 0.
 					var t, i; e && e !== o;)(i = e._gsap) && i.uncache && i.get(e, "x"), i && !i.scaleX && !i.scaleY && i.renderTransform && (i.scaleX = i.scaleY = 1e-4, i.renderTransform(1, i), t ? t.push(i) : t = [i]), e = e.parentNode;
 				return t
-			}, // _forceDisplay = e => {
-			// 	let a = [],
-			// 		parent;
-			// 	while (e && e !== _body) {
-			// 		parent = e.parentNode;
-			// 		(_win.getComputedStyle(e).display === "none" || !parent) && a.push(e, e.style.display, parent) && (e.style.display = "block");
-			// 		parent || _body.appendChild(e);
-			// 		e = parent;
-			// 	}
-			// 	return a;
-			// },
-			// _revertDisplay = a => {
-			// 	for (let i = 0; i < a.length; i+=3) {
-			// 		a[i+1] ? (a[i].style.display = a[i+1]) : a[i].style.removeProperty("display");
-			// 		a[i+2] || a[i].parentNode.removeChild(a[i]);
-			// 	}
-			// },
+			}, 
 			v = [],
 			_ = [],
 			y = function() {
@@ -50638,6 +50622,10 @@ var tml = gsap.timeline({scrollTrigger:{
     pin:true
 }});
 tml
+.to(".content",{
+	// delay: -0.2,
+	marginTop: "0%"
+ })
 .to("#center",{
    height: "100%",
 },'aa')

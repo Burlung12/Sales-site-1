@@ -50624,7 +50624,7 @@ var tml = gsap.timeline({scrollTrigger:{
 tml
 .to(".content",{
 	// delay: -0.2,
-	marginTop: "0%"
+	marginTop: "5vh"
  })
 .to("#center",{
    height: "100%",
@@ -50644,70 +50644,15 @@ tml
 .to("#center-h1",{
    top: "-30%"
 },'aa')
-.to(".carousel",{
-   delay: -0.2,
-   marginTop: "0%"
-},'aa')
-.to(".content",{
-	delay: -0.2,
-	marginTop: "0%"
- })
-// let cont = document.querySelector(".img-carousel");
-// gsap.to(".img-carousel > img", {
-//   ease: "none",
-//   x: () => -(cont.scrollWidth - window.innerWidth),
-//   scrollTrigger: {
-// 	trigger: cont,
-// 	pin: cont,
-// 	start: "center center",
-//     end: () => "+=" + (cont.scrollWidth - window.innerWidth),
-// 	scrub: true,
-// 	invalidateOnRefresh: true,
-//     // markers: true,
-//   }
-// });
+// .to(".carousel",{
+//    delay: -0.2,
+//    marginTop: "0%"
+// },'aa')
+// .to(".content",{
+// 	delay: -0.2,
+// 	marginTop: "0%"
+//  })
 
-// let contImg = document.querySelector(".images-card");
-// let galleryWidth=contImg.offsetWidth;
-// let amoutToSrcoll= galleryWidth-window.innerWidth;
-
-// gsap.to(".images-card", {
-//   x: -amoutToSrcoll,
-//   scrollTrigger: {
-// 	trigger: ".home-part",
-// 	pin: true,
-// 	start: "top 30px",
-//     end:"+=" + amoutToSrcoll,
-// 	scrub: true,
-// 	// invalidateOnRefresh: true,
-//     // markers: true,
-//   }
-// });
-
-
-
-
-// var TrandingSlider = new Swiper('.tranding-slider', {
-// 	effect: 'coverflow',
-// 	grabCursor: true,
-// 	centeredSlides: true,
-// 	loop: true,
-// 	slidesPerView: 'auto',
-// 	coverflowEffect: {
-// 	  rotate: 0,
-// 	  stretch: 0,
-// 	  depth: 100,
-// 	  modifier: 2.5,
-// 	},
-// 	pagination: {
-// 	  el: '.swiper-pagination',
-// 	  clickable: true,
-// 	},
-// 	navigation: {
-// 	  nextEl: '.swiper-button-next',
-// 	  prevEl: '.swiper-button-prev',
-// 	}
-//   });
 
 var TrandingSlider = new Swiper('.tranding-slider', {
     effect: 'coverflow',
@@ -50734,6 +50679,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
         disableOnInteraction: false, // Autoplay continues even when user interacts with slider
     }
 });
+
 var t2l = gsap.timeline({scrollTrigger:{
     trigger:".why-FindLaw-section",
     start:"20% 50%",
@@ -50768,51 +50714,22 @@ t2l
 		translateY:"-10"
 	},'card')
 
-	var timelineSwiper = new Swiper ('.timeline .swiper-container', {
-		direction: 'vertical',
-		loop: false,
-		speed: 1600,
-		pagination: '.swiper-pagination',
-		paginationBulletRender: function (swiper, index, className) {
-		  var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-		  return '<span class="' + className + '">' + year + '</span>';
-		},
-		paginationClickable: true,
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
-		breakpoints: {
-		  768: {
-			direction: 'horizontal',
-		  }
-		}
-	  });
 
-
-	  var swiper = new Swiper(".mySwiper", {
+	var swiper = new Swiper(".mySwiper", {
 		loop: true,
 		spaceBetween: 10,
-		slidesPerView: 4,
+		slidesPerView: 3,
 		freeMode: true,
-		watchSlidesProgress: true,
+		watchSlidesProgress: false,
 		autoplay: {
 			delay: 5000, // Autoplay delay in milliseconds (5 seconds)
 			disableOnInteraction: false, // Autoplay continues even when user interacts with slider
 		},
+		pagination: {
+        el: ".swiper-pagination",
+		clickable: true
+      },
 	});
-	
-	var swiper2 = new Swiper(".mySwiper2", {
-		loop: true,
-		spaceBetween: 10,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-		thumbs: {
-			swiper: swiper,
-		},
-		autoplay: {
-			delay: 5000, // Autoplay delay in milliseconds (5 seconds)
-			disableOnInteraction: false, // Autoplay continues even when user interacts with slider
-		},
-	});
+
+
 	

@@ -4002,7 +4002,7 @@ html.force--consent.show--consent body {
 }
 
 .home-hero__bg-wrap .home-hero__bg-vid {
-  opacity: 0.85;
+  opacity: 0.65;
   grid-area: 1/1/1/1;
   width: 100%;
   height: 100%;
@@ -4011,7 +4011,15 @@ html.force--consent.show--consent body {
   left: 0;
   object-fit: cover;
 }
-
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  object-fit: cover;
+}
 .home-hero__bg-wrap .home-hero__bg-ph {
   opacity: 0;
   pointer-events: none;
@@ -5181,6 +5189,7 @@ html.force--consent.show--consent body {
     height: 100%;
     overflow: hidden;
     transform: none !important;
+    position: relative;
   }
 
   .home-hero__bg-wrap .home-hero__bg-vid {

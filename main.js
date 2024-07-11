@@ -50624,7 +50624,7 @@ var tml = gsap.timeline({scrollTrigger:{
 tml
 .to(".content",{
 	// delay: -0.2,
-	marginTop: "5vh"
+	marginTop: "0vh"
  })
 .to("#center",{
    height: "100%",
@@ -50681,36 +50681,36 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 });
 
 var t2l = gsap.timeline({scrollTrigger:{
-    trigger:".why-FindLaw-section",
-    start:"20% 50%",
+    trigger:".why-findlaw-cards",
+    start:"10% 50%",
     end:"30% 50%",
     scrub:2,
     pin:true,
-	duration:1,
+	// duration:1,
 }});
 t2l
- .to(".cards-points4",{
+ .to(".cards-points11",{
 	    opacity:1,
 		translateY:"-10"
 	},'card')
-	.to(".cards-points1",{
+	.to(".cards-points12",{
 	    opacity:1,
-		delay:0.5,
+		delay:0.7,
+		translateY:"-15"
+	},'card')
+	.to(".cards-points13",{
+	    opacity:1,
+		delay:0,
 		translateY:"-10"
 	},'card')
-	.to(".cards-points2",{
+	.to(".cards-points14",{
 	    opacity:1,
-		delay:0.6,
-		translateY:"-10"
+		delay:0.7,
+		translateY:"-15"
 	},'card')
-	.to(".cards-points3",{
+	.to(".cards-points15",{
 	    opacity:1,
-		delay:0.2,
-		translateY:"-10"
-	},'card')
-	.to(".cards-points5",{
-	    opacity:1,
-		delay:0.4,
+		delay:00,
 		translateY:"-10"
 	},'card')
 

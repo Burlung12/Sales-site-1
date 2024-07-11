@@ -10582,6 +10582,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   overflow: hidden;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #bottom {

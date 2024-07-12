@@ -84,7 +84,11 @@ html {
   color: #151515;
   font-family: HelveticaNowDisplay;
   font-size: 0.578704vw;
+  overflow-x: hidden;
 }
+/* .wrapper{
+  overflow-x: hidden;
+} */
 
 @media only screen and (min-width: 2160px) {
   html {
@@ -10999,11 +11003,25 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	/* transform: scale(1.1); */
 	transition: all 0.5s ease-in;
 }
-#tranding .tranding-slide.swiper-slide-active:hover{
+#tranding .tranding-slide.swiper-slide-active{
+  transition: all 0.4s ease-in-out;
+}
+#tranding .tranding-slide.swiper-slide-active{
   background-color: #f4f4f4;
 }
-#tranding .tranding-slide.swiper-slide-active:hover .top-content .number{
+#tranding .tranding-slide.swiper-slide-active:hover{
+  background-color: #f4f4f4;
+  background-image: url("./AdobeStock_755011753.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease-in-out;
+}
+#tranding .tranding-slide.swiper-slide-active .top-content .number{
   color: #f4f4f4;
+}
+#tranding .tranding-slide.swiper-slide-active:hover .top-content .number{
+  color: #ff471d;
 }
 #tranding .tranding-slide.swiper-slide-active:hover .main-contents,
 #tranding .tranding-slide.swiper-slide-active:hover .top-content {
@@ -11391,7 +11409,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
  line-height: 1.5em;
 }
 .header__links-inner li ul li a:hover {
-  color: #f7f7f7;
+  color: #eb4f0d;
 }
 
 /* working css for last carousel */ 
@@ -11778,8 +11796,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background-color: #d21e1e;
 }
 .who-we-are-left-container .who-we-are-left-content .home-intro__img-new{
-  width: 28%;
-  height: 450px;  
+  max-width: 450px;
+  height: auto;  
   position: relative;
   /* background-color: #d21e1e; */
   background: transparent;
